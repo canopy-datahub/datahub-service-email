@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Data Hub Mail</title>
+    <style type="text/css">
+        body {
+            margin:0;
+            padding:0;
+            background-color:#eeeeee;
+            color:#777777;
+            font-family:Open Sans, Arial, Helvetica, sans-serif;
+            font-size:12px;
+            -webkit-text-size-adjust:none;
+            -ms-text-size-adjust:none;
+        }
+        h1, h2 {
+            color:#3b5167;
+            margin-bottom:10px !important;
+        }
+        a, a:link, a:visited {
+            color:#4BB587;
+            text-decoration:none;
+        }
+        a:hover, a:active {
+            text-decoration:none;
+            color:#3db2c4 !important;
+        }
+        p {
+            margin:0 0 14px 0;
+        }
+        img {
+            border:0;
+        }
+        table td {
+            border-collapse:collapse;
+        }
+        .highlighted {
+            background-color:#ffe69e;
+            color:#3b5167;
+            padding:2px 4px;
+            border-radius:2px;
+            -moz-border-radius:2px;
+            -webkit-border-radius:2px;
+        }
+
+        /*specific code*/
+        .ReadMsgBody {width: 100%;}
+        .ExternalClass {width: 100%;}
+        .yshortcuts {color: #4BB587;}
+        .yshortcuts a span {color: #4BB587; border-bottom: none !important; background: none !important;}
+        /*specific code*/
+    </style>
+
+    <!--[if gte mso 9]>
+    <style type="text/css">
+        #pageContainer {
+            background-color:transparent !important;
+        }
+        td.list_td {
+            line-height:11pt !important;
+        }
+        td.list_image {
+            vertical-align:middle;
+        }
+        td.footer_list {
+            padding-bottom:0px !important;
+            line-height:15pt !important;
+        }
+        td.footer_list_image {
+            vertical-align:middle !important;
+            padding-bottom:0px !important;
+            padding-bottom:2px !important;
+        }
+        td.socialIcons {
+            padding-top:20px !important;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body background="cid:bgImg">
+    <table id="pageContainer" width="100%" align="center" background="cid:bgImg" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; background-repeat:repeat; background-color:#eeeeee;">
+        <tr>
+            <td style="padding:30px 20px  0px 20px;">
+                <!-- Start of logo, date, forward  and home links container -->
+                <table width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#777777;">
+                    <tr>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- End of logo, date, forward  and home links container -->
+    <!-- Start of text banner -->
+    <table bgcolor="#ffffff" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Open Sans, Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#777777;">
+        <tr>
+            <td style="font-family:Open Sans, Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;"><img alt="image" src="cid:textBanner" width="600" height="100" align="left" border="0" vspace="0" hspace="0" style="display:block;" /></td>
+        </tr>
+    </table>
+    <!-- End of text banner -->
+    <table bgcolor="#ffffff" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Open Sans, Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#777777;">
+        <tr>
+            <td style="padding-right:30px; padding-left:30px; padding-top:30px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;">
+                <p style="font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:36px; line-height:30pt; color:#00889D; font-weight:300; margin-top:0; margin-bottom:20px !important; padding:0; text-indent:-3px;">Support Request Assigned</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-right:30px; padding-bottom:30px; padding-left:30px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;">
+                <p>
+                    Support request [ #<span th:text="${request.props.get('supportRequestId')}"></span> ] has been assigned to <span th:text="${request.props.get('assignedUser')}"></span>.
+                </p>
+                <p>
+                    Please follow up with the user as needed.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-right:30px; padding-bottom:30px; padding-left:30px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;">
+                <p>
+                    <em>
+                        If you believe you received this message in error or have questions, please contact the Data Hub Application Administrator at <span th:text="${request.from}"></span>
+                    </em>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <!-- Start of footer -->
+    <table bgcolor="#444444" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Open Sans, Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#cccccc;">
+        <tr>
+            <td>
+                <table width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#cccccc;">
+                    <tr>
+                        <td width="160" valign="top" style="padding-top:10px; padding-bottom:10px; padding-left: 30px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#cccccc;">
+                            <a style="text-decoration:underline; color:#fff;" href="https://datahub.nih.gov/">DataHub.nih.gov</a><br/><br/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </body>
+</html>
