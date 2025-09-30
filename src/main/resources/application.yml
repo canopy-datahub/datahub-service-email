@@ -21,6 +21,7 @@ spring:
         enabled: true
 
 server:
+<<<<<<< Updated upstream
   port: 8085
 
 management:
@@ -35,6 +36,9 @@ management:
     web:
       exposure:
         include: health,shutdown
+=======
+  port: 8084
+>>>>>>> Stashed changes
 
 logging:
   level:
@@ -67,11 +71,15 @@ spring:
   config:
     activate:
       on-profile: dev
+<<<<<<< Updated upstream
   cloud.aws.sqs.region: us-east-2
   security:
     user:
       name: ${DATAHUB_SPRING_MANAGEMENT_USER}
       password: ${DATAHUB_SPRING_MANAGEMENT_PASSWORD}
+=======
+  cloud.aws.sqs.region: us-west-2
+>>>>>>> Stashed changes
 
 logging:
   pattern:
@@ -87,7 +95,7 @@ spring:
   cloud:
     aws:
       sqs:
-        region: us-east-1
+        region: us-west-2
 
 logging:
   pattern:
