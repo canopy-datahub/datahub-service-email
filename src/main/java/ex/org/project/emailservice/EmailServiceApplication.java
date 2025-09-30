@@ -15,9 +15,12 @@ import java.util.function.Function;
 
 @Slf4j
 @SpringBootApplication
-@ComponentScan("org.springframework.cloud.function.context") //this is the line that saved my mental health <3
-@ComponentScan("ex.org.project.emailservice.services")
-@ComponentScan("ex.org.project.emailservice.config")
+@ComponentScan({
+    "org.springframework.cloud.function.context",
+    "ex.org.project.emailservice.services",
+    "ex.org.project.emailservice.config",
+    "ex.org.project.emailservice.security"
+})
 public class EmailServiceApplication {
 
 	@Autowired
