@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Email Template Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0B7A45 0%, #004B2D 100%);
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 3px solid #d4af37;
+            padding-bottom: 10px;
+        }
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .template-card {
+            background: white;
+            color: #333;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+            border: 2px solid #d4af37;
+        }
+        .template-card h3 {
+            color: #0B7A45;
+            margin-top: 0;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 8px;
+        }
+        .template-card a {
+            display: inline-block;
+            background: #0B7A45;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+            border: 2px solid #d4af37;
+        }
+        .template-card a:hover {
+            background: #d4af37;
+            color: #004B2D;
+        }
+        .category {
+            font-size: 12px;
+            color: #8C5C2C;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📧 DataHub Email Template Preview</h1>
+        <p style="text-align: center; font-size: 18px;">Click any template below to preview it in your browser</p>
+        
+        <div class="template-grid">
+            <!-- Data Ingest Templates -->
+            <div class="template-card">
+                <div class="category">Data Ingest</div>
+                <h3>Submission Confirmation</h3>
+                <a href="src/main/resources/templates/data-ingest/submission-confirmation.html" target="_blank">Preview</a>
+            </div>
+            
+            <div class="template-card">
+                <div class="category">Data Ingest</div>
+                <h3>Submission Processed</h3>
+                <a href="src/main/resources/templates/data-ingest/submission-processed.html" target="_blank">Preview</a>
+            </div>
+            
+            <div class="template-card">
+                <div class="category">Data Ingest</div>
+                <h3>Submission Failure</h3>
+                <a href="src/main/resources/templates/data-ingest/submission-failure.html" target="_blank">Preview</a>
+            </div>
+            
+            <!-- Study Registration Templates -->
+            <div class="template-card">
+                <div class="category">Study Registration</div>
+                <h3>New Study Creation</h3>
+                <a href="src/main/resources/templates/study-reg/new-study-creation.html" target="_blank">Preview</a>
+            </div>
+            
+            <div class="template-card">
+                <div class="category">Study Registration</div>
+                <h3>Study Approved for Release</h3>
+                <a href="src/main/resources/templates/study-reg/study-approved-for-release.html" target="_blank">Preview</a>
+            </div>
+            
+            <div class="template-card">
+                <div class="category">Study Registration</div>
+                <h3>Study DCC Metadata Submission</h3>
+                <a href="src/main/resources/templates/study-reg/study-dcc-metadata-submission.html" target="_blank">Preview</a>
+            </div>
+            
+            <!-- User Templates -->
+            <div class="template-card">
+                <div class="category">Users</div>
+                <h3>Welcome Email</h3>
+                <a href="src/main/resources/templates/users/welcome-email.html" target="_blank">Preview</a>
+            </div>
+            
+            <!-- Support Request Templates -->
+            <div class="template-card">
+                <div class="category">Support Request</div>
+                <h3>Support Request Submission</h3>
+                <a href="src/main/resources/templates/support-request/support-request-submission.html" target="_blank">Preview</a>
+            </div>
+            
+            <div class="template-card">
+                <div class="category">Support Request</div>
+                <h3>Support Request Assignment</h3>
+                <a href="src/main/resources/templates/support-request/support-request-assignment.html" target="_blank">Preview</a>
+            </div>
+            
+            <div class="template-card">
+                <div class="category">Support Request</div>
+                <h3>Support Request Resolved</h3>
+                <a href="src/main/resources/templates/support-request/support-request-resolved.html" target="_blank">Preview</a>
+            </div>
+            
+            <div class="template-card">
+                <div class="category">Support Request</div>
+                <h3>Support Request Closed</h3>
+                <a href="src/main/resources/templates/support-request/support-request-closed.html" target="_blank">Preview</a>
+            </div>
+            
+            <!-- Workbench Templates -->
+            <div class="template-card">
+                <div class="category">Workbench</div>
+                <h3>Workbench Request</h3>
+                <a href="src/main/resources/templates/workbench/workbench-request.html" target="_blank">Preview</a>
+            </div>
+            
+            <div class="template-card">
+                <div class="category">Workbench</div>
+                <h3>Workbench Action</h3>
+                <a href="src/main/resources/templates/workbench/workbench-action.html" target="_blank">Preview</a>
+            </div>
+            
+            <!-- Other Templates -->
+            <div class="template-card">
+                <div class="category">Upload Portal</div>
+                <h3>Portal Submission</h3>
+                <a href="src/main/resources/templates/upload-portal/portal-submission.html" target="_blank">Preview</a>
+            </div>
+            
+            <div class="template-card">
+                <div class="category">SFTP</div>
+                <h3>SFTP Processed</h3>
+                <a href="src/main/resources/templates/sftp/sftp-processed.html" target="_blank">Preview</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
