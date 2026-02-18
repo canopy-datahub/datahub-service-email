@@ -101,7 +101,7 @@
     <tr>
         <td style="padding-right:30px; padding-bottom:30px; padding-left:30px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;">
             <p>
-                <span th:text="${request.props.get('studyName')}"></span> (<span th:text="${request.props.get('phs')}"></span>) has been reviewed and approved by the Data Curation team.
+                <span th:text="${request.props.get('studyName')}"></span> (Study ID <span th:text="${request.props.get('studyId')}"></span>) has been reviewed and approved by the Data Curation team.
             </p>
             <p>
                 You can now view the study in the system by accessing its <a th:href="${request.props.get('studyLink')}">study overview</a> page.
