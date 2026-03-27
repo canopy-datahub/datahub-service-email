@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Data Hub Mail</title>
+    <title>Canopy Mail</title>
     <style type="text/css">
         body {
             margin:0;
@@ -15,16 +15,16 @@
             -ms-text-size-adjust:none;
         }
         h1, h2 {
-            color:#3b5167;
+            color:#0B7A45;
             margin-bottom:10px !important;
         }
         a, a:link, a:visited {
-            color:#4BB587;
+            color:#0B7A45;
             text-decoration:none;
         }
         a:hover, a:active {
             text-decoration:none;
-            color:#3db2c4 !important;
+            color:#d4af37 !important;
         }
         p {
             margin:0 0 14px 0;
@@ -36,19 +36,20 @@
             border-collapse:collapse;
         }
         .highlighted {
-            background-color:#ffe69e;
-            color:#3b5167;
+            background-color:#fef9e7;
+            color:#8C5C2C;
             padding:2px 4px;
             border-radius:2px;
             -moz-border-radius:2px;
             -webkit-border-radius:2px;
+            border-left:3px solid #d4af37;
         }
 
         /*specific code*/
         .ReadMsgBody {width: 100%;}
         .ExternalClass {width: 100%;}
-        .yshortcuts {color: #4BB587;}
-        .yshortcuts a span {color: #4BB587; border-bottom: none !important; background: none !important;}
+        .yshortcuts {color: #0B7A45;}
+        .yshortcuts a span {color: #0B7A45; border-bottom: none !important; background: none !important;}
         /*specific code*/
     </style>
 
@@ -91,17 +92,10 @@
     </tr>
 </table>
 <!-- End of logo, date, forward  and home links container -->
-<!-- Start of text banner -->
-<table bgcolor="#ffffff" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Open Sans, Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#777777;">
-    <tr>
-        <td style="font-family:Open Sans, Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;"><img alt="image" src="cid:textBanner" width="600" height="100" align="left" border="0" vspace="0" hspace="0" style="display:block;" /></td>
-    </tr>
-</table>
-<!-- End of text banner -->
 <table bgcolor="#ffffff" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Open Sans, Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#777777;">
     <tr>
         <td style="padding-right:30px; padding-left:30px; padding-top:30px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;">
-            <p style="font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:36px; line-height:30pt; color:#00889D; font-weight:300; margin-top:0; margin-bottom:20px !important; padding:0; text-indent:-3px;">Welcome to the Data Hub!</p>
+            <p style="font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:36px; line-height:30pt; color:#0B7A45; font-weight:300; margin-top:0; margin-bottom:20px !important; padding:0; text-indent:-3px; border-bottom:3px solid #d4af37; padding-bottom:10px;">Welcome to the Canopy!</p>
         </td>
     </tr>
     <tr>
@@ -110,31 +104,31 @@
                 Dear <span th:text="${request.props.get('name')}"></span>,
             </p>
             <p>
-                Welcome to the <a href="https://datahub.nih.gov/">Data Hub</a>! We are thrilled to have you join our community of researchers, analysts, and scientists dedicated to advancing our understanding of COVID-19.
+                Welcome to the <a href="http://redwood-dev-985841589.us-east-1.elb.amazonaws.com/">Canopy</a>! We are thrilled to have you join our community of researchers, analysts, and scientists dedicated to advancing biomedical research.
             </p>
             <p>
-                The Data Hub is your go-to platform for accessing and analyzing a wide range of COVID-19 data. The Data Hub boasts several features, such as a public-facing study search, a wide variety of integrated tools, and enhanced study overview pages with metadata and variable information. Whether you are looking to explore datasets, conduct in-depth analyses, or collaborate with other researchers, our system provides the tools and resources to meet your research needs.
+                Canopy is a secure, cloud-based platform for accessing and analyzing curated, de-identified research datasets. It features a public-facing study search, enhanced study overview pages with metadata and variable information, and integrated tools to support your research workflow. Whether you are exploring datasets, conducting in-depth analyses, or collaborating with other researchers, Canopy provides the resources to meet your needs.
             </p>
             <p>
                 To help you get started, we recommend checking out the following resources:
                 <ul>
-                    <li><a href="https://www.youtube.com/playlist?list=PL9u2kRIZZNo0ndqPurkEPj4umc79RF7Ui">Getting Started with the Data Hub Video Playlist</a></li>
-                    <li><a href="https://datahub.nih.gov/tutorial">Data Hub Tutorial</a></li>
-                    <li><a href="https://datahub.nih.gov/faq">Frequently Asked Questions</a></li>
-                    <li><a href="https://sharing.nih.gov/accessing-data/accessing-genomic-data/how-to-request-and-access-datasets-from-dbgap">How to Request and Access Datasets from dbGaP</a></li>
+                    
+                    <li><a href="http://redwood-dev-985841589.us-east-1.elb.amazonaws.com/tutorial">Canopy Tutorial</a></li>
+                    <li><a href="http://redwood-dev-985841589.us-east-1.elb.amazonaws.com/faq">Frequently Asked Questions</a></li>
+                    <li><a href="http://redwood-dev-985841589.us-east-1.elb.amazonaws.com/resourceCenter">Resource Center</a></li>
                 </ul>
             </p>
             <p>
-                These links will guide you through the process of navigating the Data Hub and accessing the datasets you need for your research.
+                These links will guide you through navigating Canopy and accessing the datasets you need for your research.
             </p>
             <p>
-                If you have any questions or need further assistance, please do not hesitate to reach out to our <a href="https://datahub.nih.gov/support">support team</a>, and we can set up a one-on-one call with you to walk you through the system’s functionality.
+                If you have any questions or need further assistance, please do not hesitate to reach out to our <a href="http://redwood-dev-985841589.us-east-1.elb.amazonaws.com/support">support team</a>.
             </p>
             <p>
                 We look forward to seeing the incredible insights and discoveries you will make.
             </p>
             <p>Best regards,
-                <br> Data Hub Administrator,
+                <br> Canopy Administrator,
                 <br><span th:text="${request.from}"></span>
             </p>
         </td>
@@ -143,20 +137,20 @@
         <td style="padding-right:30px; padding-bottom:30px; padding-left:30px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;">
             <p>
                 <em>
-                    If you believe you received this message in error or have questions, please contact the Data Hub Application Administrator at <span th:text="${request.from}"></span>
+                    If you believe you received this message in error or have questions, please contact the Canopy Application Administrator at <span th:text="${request.from}"></span>
                 </em>
             </p>
         </td>
     </tr>
 </table>
 <!-- Start of footer -->
-<table bgcolor="#444444" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Open Sans, Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#cccccc;">
+<table bgcolor="#004B2D" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Open Sans, Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#cccccc; border-top:3px solid #d4af37;">
     <tr>
         <td>
             <table width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#cccccc;">
                 <tr>
                     <td width="160" valign="top" style="padding-top:10px; padding-bottom:10px; padding-left: 30px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#cccccc;">
-                        <a style="text-decoration:underline; color:#fff;" href="https://datahub.nih.gov/">DataHub.nih.gov</a><br/><br/>
+                        <a style="text-decoration:underline; color:#f4c542;" href="http://redwood-dev-985841589.us-east-1.elb.amazonaws.com/">canopy.stanford.edu</a><br/><br/>
                     </td>
                 </tr>
             </table>

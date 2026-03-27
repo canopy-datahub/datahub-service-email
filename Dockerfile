@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim-buster
+FROM amazoncorretto:17-alpine
 EXPOSE 8080
 
 ARG JAR_FILE=target/email-service-0.0.1-SNAPSHOT-aws.jar
