@@ -1,0 +1,108 @@
+# DEFAULT
+# Spring Boot configuration
+spring:
+
+  cloud.aws.region.auto: true
+
+  profiles:
+    active: dev
+  mvc:
+    servlet:
+      path: /api/email/v1
+    log-request-details: false
+    log-resolved-exception: false
+  cloud:
+    function:
+      definition: sendEmail
+    aws:
+      ses:
+        enabled: false
+      s3:
+        enabled: true
+
+server:
+  port: 8085
+
+management:
+  endpoint:
+    health:
+      enabled: true
+      show-details: never
+    shutdown:
+      enabled: true
+  endpoints:
+    enabled-by-default: false
+    web:
+      exposure:
+        include: health,shutdown
+
+
+logging:
+  level:
+    root: info
+    web: trace
+    org.springframework.web.servlet.handler.SimpleUrlHandlerMapping: info
+    org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping: info
+    org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: info
+    org.springframework.boot.web.servlet.ServletContextInitializerBeans: info
+    org.springframework.cloud.function:
+      utils.FunctionClassUtils: warn
+      adapter.aws.FunctionInvoker: warn
+
+---
+#LOCAL
+
+spring:
+  config:
+    activate:
+      on-profile: local
+
+logging:
+  pattern:
+    console: "[%boldMagenta(EMAIL)] [%boldGreen(LOCAL)] %d{yyyy-MM-dd HH:mm:ss.SSS} %highlight([%5p]) --- [%cyan(%15.15t)] %-40.40logger{1.} %boldYellow(::) %m%n%wEx"
+
+---
+# DEV
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+  cloud.aws.sqs.region: us-east-1
+  security:
+    user:
+      name: ${DATAHUB_SPRING_MANAGEMENT_USER}
+      password: ${DATAHUB_SPRING_MANAGEMENT_PASSWORD}
+
+logging:
+  pattern:
+    console: "[%boldMagenta(EMAIL)] [%boldGreen(DEV)] %d{yyyy-MM-dd HH:mm:ss.SSS} %highlight([%5p]) --- [%cyan(%15.15t)] %-40.40logger{1.} %boldYellow(::) %m%n%wEx"
+
+---
+# TEST
+
+spring:
+  config:
+    activate:
+      on-profile: test
+  cloud:
+    aws:
+      sqs:
+        region: us-east-1
+
+logging:
+  pattern:
+    console: "[EMAIL] [TEST] %d{yyyy-MM-dd HH:mm:ss.SSS} [%5p] --- [%15.15t] %-40.40logger{1.} :: %m%n%wEx"
+
+---
+# PROD
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+  cloud.aws.sqs.region: us-east-1
+
+logging:
+  pattern:
+    console: "[EMAIL] [PROD] %d{yyyy-MM-dd HH:mm:ss.SSS} [%5p] --- [%15.15t] %-40.40logger{1.} :: %m%n%wEx"
