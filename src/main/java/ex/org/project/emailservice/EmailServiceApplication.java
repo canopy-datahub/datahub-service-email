@@ -19,7 +19,6 @@ import java.util.function.Function;
     "org.springframework.cloud.function.context",
     "ex.org.project.emailservice.services",
     "ex.org.project.emailservice.config",
-    "ex.org.project.emailservice.security"
 })
 public class EmailServiceApplication {
 

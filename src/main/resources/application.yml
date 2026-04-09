@@ -68,7 +68,7 @@ spring:
   config:
     activate:
       on-profile: dev
-  cloud.aws.sqs.region: us-west-2
+  cloud.aws.sqs.region: us-east-1
   security:
     user:
       name: ${DATAHUB_SPRING_MANAGEMENT_USER}
@@ -88,7 +88,7 @@ spring:
   cloud:
     aws:
       sqs:
-        region: us-west-2
+        region: us-east-1
 
 logging:
   pattern:
@@ -101,7 +101,7 @@ spring:
   config:
     activate:
       on-profile: prod
-  cloud.aws.sqs.region: us-west-2
+  cloud.aws.sqs.region: us-east-1
 
 logging:
   pattern:

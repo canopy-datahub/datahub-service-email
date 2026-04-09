@@ -92,8 +92,7 @@ public class EmailSendingService {
      * @throws MessagingException
      */
     private void addInlineImages(MimeMessageHelper messageHelper) throws MessagingException{
-        messageHelper.addInline("textBanner", new FileDataSource("images/textBanner.png"));
-        messageHelper.addInline("copyright", new FileDataSource("images/copyright.png")); //removing this line breaks the banner for some reason, the image itself doesnt matter
+        messageHelper.addInline("copyright", new FileDataSource("images/copyright.png"));
     }
 
     private String getProfilePrepend() {
