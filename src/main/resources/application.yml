@@ -7,8 +7,6 @@ spring:
   profiles:
     active: dev
   mvc:
-    servlet:
-      path: /api/email/v1
     log-request-details: false
     log-resolved-exception: false
   cloud:
@@ -22,6 +20,8 @@ spring:
 
 server:
   port: 8085
+  servlet:
+    context-path: /api/email/v1
 
 management:
   endpoint:
