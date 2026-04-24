@@ -8,11 +8,11 @@
     <version>3.2.5</version>
     <relativePath/>
   </parent>
-  <groupId>ex.org.project</groupId>
-  <artifactId>datahub-service-email</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>DataHub Email Service</name>
-  <description>DataHub Email Service</description>
+  <groupId>org.canopyplatform</groupId>
+  <artifactId>canopy-service-email</artifactId>
+  <version>0.0.2-SNAPSHOT</version>
+  <name>Canopy DataHub Email Service</name>
+  <description>Canopy DataHub Email Service</description>
   <properties>
     <java.version>17</java.version>
     <springcloud.version>2023.0.1</springcloud.version>
