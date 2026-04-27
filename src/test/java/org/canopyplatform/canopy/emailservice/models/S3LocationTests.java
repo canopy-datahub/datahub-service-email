@@ -1,6 +1,6 @@
-package ex.org.project.emailservice.models;
+package org.canopyplatform.canopy.emailservice.models;
 
-import ex.org.project.emailservice.exceptions.S3AttachmentException;
+import org.canopyplatform.canopy.emailservice.exceptions.S3AttachmentException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;

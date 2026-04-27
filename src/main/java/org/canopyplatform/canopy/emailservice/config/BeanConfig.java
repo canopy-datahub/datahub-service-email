@@ -1,4 +1,4 @@
-package ex.org.project.emailservice.config;
+package org.canopyplatform.canopy.emailservice.config;
 
 import io.awspring.cloud.ses.SimpleEmailServiceJavaMailSender;
 import org.springframework.context.annotation.Bean;

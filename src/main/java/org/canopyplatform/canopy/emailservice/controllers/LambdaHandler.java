@@ -1,12 +1,12 @@
-package ex.org.project.emailservice.controllers;
+package org.canopyplatform.canopy.emailservice.controllers;
 
 import com.amazonaws.services.lambda.runtime.events.SQSEvent;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import ex.org.project.emailservice.exceptions.EmailRequestCategorizationException;
-import ex.org.project.emailservice.services.EmailSendingService;
-import ex.org.project.emailservice.models.EmailRequest;
-import ex.org.project.emailservice.services.EmailTemplateService;
+import org.canopyplatform.canopy.emailservice.exceptions.EmailRequestCategorizationException;
+import org.canopyplatform.canopy.emailservice.services.EmailSendingService;
+import org.canopyplatform.canopy.emailservice.models.EmailRequest;
+import org.canopyplatform.canopy.emailservice.services.EmailTemplateService;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.function.Function;

@@ -1,4 +1,4 @@
-package ex.org.project.emailservice;
+package org.canopyplatform.canopy.emailservice;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

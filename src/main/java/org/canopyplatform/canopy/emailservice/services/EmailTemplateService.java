@@ -1,7 +1,7 @@
-package ex.org.project.emailservice.services;
+package org.canopyplatform.canopy.emailservice.services;
 
-import ex.org.project.emailservice.exceptions.EmailRequestCategorizationException;
-import ex.org.project.emailservice.models.EmailRequest;
+import org.canopyplatform.canopy.emailservice.exceptions.EmailRequestCategorizationException;
+import org.canopyplatform.canopy.emailservice.models.EmailRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
