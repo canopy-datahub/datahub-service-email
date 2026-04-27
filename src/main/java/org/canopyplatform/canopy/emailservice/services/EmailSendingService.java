@@ -1,7 +1,7 @@
-package ex.org.project.emailservice.services;
+package org.canopyplatform.canopy.emailservice.services;
 
-import ex.org.project.emailservice.exceptions.EmailSendingException;
-import ex.org.project.emailservice.models.EmailRequest;
+import org.canopyplatform.canopy.emailservice.exceptions.EmailSendingException;
+import org.canopyplatform.canopy.emailservice.models.EmailRequest;
 import jakarta.activation.FileDataSource;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;

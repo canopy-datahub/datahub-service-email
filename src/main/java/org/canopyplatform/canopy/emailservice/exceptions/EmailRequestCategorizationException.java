@@ -1,6 +1,6 @@
-package ex.org.project.emailservice.exceptions;
+package org.canopyplatform.canopy.emailservice.exceptions;
 
-import ex.org.project.emailservice.models.EmailRequest;
+import org.canopyplatform.canopy.emailservice.models.EmailRequest;
 import lombok.Getter;
 
 @Getter

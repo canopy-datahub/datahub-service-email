@@ -1,4 +1,4 @@
-package ex.org.project.emailservice.models;
+package org.canopyplatform.canopy.emailservice.models;
 
 import java.util.List;
 import java.util.Map;

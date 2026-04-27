@@ -1,9 +1,9 @@
-package ex.org.project.emailservice;
+package org.canopyplatform.canopy.emailservice;
 
 import com.amazonaws.services.lambda.runtime.events.SQSEvent;
-import ex.org.project.emailservice.controllers.LambdaHandler;
-import ex.org.project.emailservice.services.EmailSendingService;
-import ex.org.project.emailservice.services.EmailTemplateService;
+import org.canopyplatform.canopy.emailservice.controllers.LambdaHandler;
+import org.canopyplatform.canopy.emailservice.services.EmailSendingService;
+import org.canopyplatform.canopy.emailservice.services.EmailTemplateService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -17,8 +17,8 @@ import java.util.function.Function;
 @SpringBootApplication
 @ComponentScan({
     "org.springframework.cloud.function.context",
-    "ex.org.project.emailservice.services",
-    "ex.org.project.emailservice.config",
+    "org.canopyplatform.canopy.emailservice.services",
+    "org.canopyplatform.canopy.emailservice.config",
 })
 public class EmailServiceApplication {
 

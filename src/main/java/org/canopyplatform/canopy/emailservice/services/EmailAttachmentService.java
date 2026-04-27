@@ -1,6 +1,6 @@
-package ex.org.project.emailservice.services;
+package org.canopyplatform.canopy.emailservice.services;
 
-import ex.org.project.emailservice.models.S3Location;
+import org.canopyplatform.canopy.emailservice.models.S3Location;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import software.amazon.awssdk.core.ResponseInputStream;
