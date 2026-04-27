@@ -1,7 +1,7 @@
 FROM amazoncorretto:17-alpine
 EXPOSE 8080
 
-ARG JAR_FILE=target/email-service-0.0.1-SNAPSHOT-aws.jar
+ARG JAR_FILE=target/canopy-service-email-0.0.2-SNAPSHOT-aws.jar
 
 #Instruction to copy files from local source to container target
 COPY ${JAR_FILE} app.jar
