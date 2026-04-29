@@ -71,8 +71,8 @@ spring:
   cloud.aws.sqs.region: us-east-1
   security:
     user:
-      name: ${DATAHUB_SPRING_MANAGEMENT_USER}
-      password: ${DATAHUB_SPRING_MANAGEMENT_PASSWORD}
+      name: ${CANOPY_SPRING_MANAGEMENT_USER}
+      password: ${CANOPY_SPRING_MANAGEMENT_PASSWORD}
 
 logging:
   pattern:
