@@ -1,5 +1,5 @@
 FROM amazoncorretto:17-alpine
-EXPOSE 8080
+EXPOSE 8085
 
 ARG JAR_FILE=target/canopy-service-email-0.0.2-SNAPSHOT-aws.jar
 
