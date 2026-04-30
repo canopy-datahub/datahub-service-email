@@ -38,8 +38,6 @@ public class EmailTemplateService {
             case "Study Creation" -> templateEngine.process("study-reg/new-study-creation", context);
             case "Study DCC Metadata" -> templateEngine.process("study-reg/study-dcc-metadata-submission", context);
             case "Study Approval" -> templateEngine.process("study-reg/study-approved-for-release", context);
-            case "Workbench Request" -> templateEngine.process("workbench/workbench-request", context);
-            case "Workbench Action" -> templateEngine.process("workbench/workbench-action", context);
             case "Submission Confirmation" -> templateEngine.process("data-ingest/submission-confirmation", context);
             case "Submission Processed" -> {
                 context.setVariable("rejectedFileNames", splitStringOnSemicolons(request.props().get("rejectedFiles")));
