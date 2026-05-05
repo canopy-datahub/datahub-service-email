@@ -106,3 +106,16 @@ spring:
 logging:
   pattern:
     console: "[EMAIL] [PROD] %d{yyyy-MM-dd HH:mm:ss.SSS} [%5p] --- [%15.15t] %-40.40logger{1.} :: %m%n%wEx"
+
+---
+# STAGING
+
+spring:
+  config:
+    activate:
+      on-profile: staging
+  cloud.aws.sqs.region: us-east-1
+
+logging:
+  pattern:
+    console: "[EMAIL] [STAGING] %d{yyyy-MM-dd HH:mm:ss.SSS} [%5p] --- [%15.15t] %-40.40logger{1.} :: %m%n%wEx"
